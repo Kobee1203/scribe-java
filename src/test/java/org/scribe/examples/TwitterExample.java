@@ -1,5 +1,6 @@
 package org.scribe.examples;
 
+import java.net.MalformedURLException;
 import java.util.Scanner;
 
 import org.scribe.builder.*;
@@ -11,7 +12,7 @@ public class TwitterExample
 {
   private static final String PROTECTED_RESOURCE_URL = "https://api.twitter.com/1/statuses/update.json";
   
-  public static void main(String[] args)
+  public static void main(String[] args) throws MalformedURLException
   {
     OAuthService service = new ServiceBuilder()
                                 .provider(TwitterApi.class)
