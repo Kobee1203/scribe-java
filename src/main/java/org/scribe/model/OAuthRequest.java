@@ -22,7 +22,7 @@ public class OAuthRequest extends Request
    * @param url resource URL
  * @throws MalformedURLException 
    */
-  public OAuthRequest(Verb verb, String url) throws MalformedURLException
+  public OAuthRequest(Verb verb, String url)
   {
     super(verb, url);
     this.oauthParameters = new HashMap<String, String>();
